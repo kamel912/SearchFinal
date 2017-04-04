@@ -10,6 +10,8 @@ import android.widget.TextView;
 import com.mk.searchfinal.model.UserModel;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by MK on 04/04/2017.
@@ -18,7 +20,7 @@ import java.util.ArrayList;
 public class UserAdapter extends BaseAdapter {
     private Context context;
     private LayoutInflater inflater;
-    ArrayList<UserModel> userModels;
+    List<UserModel> userModels = Collections.emptyList();
     UserModel userModel;
 
     public UserAdapter(Context context, ArrayList<UserModel> userModels) {
